@@ -8,6 +8,10 @@ from pyrogram import filters
 
 from pyrogram.types import Chat, Message, User
 
+PMSET =True
+pchats = []
+
+
 @USER.on_message(filters.text & filters.private & ~filters.me & ~filters.bot)
 
 async def pmPermit(client: USER, message: Message):
