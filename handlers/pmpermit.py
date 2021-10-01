@@ -1,5 +1,7 @@
 from callsmusic.callsmusic import client as USER
 
+from pyrogram import Client
+
 from config import SUDO_USERS, PMPERMIT
 
 from pyrogram import filters
@@ -15,7 +17,7 @@ async def pmPermit(client: USER, message: Message):
   return                        
 
 
-@Client.on_message(filters.command(["pmpermit"]))
+@Client.on_message(filters.command(["/pmpermit"]))
 async def bye(client: Client, message: Message):
     if message.from_user.id in SUDO_USERS:
         global PMSET
