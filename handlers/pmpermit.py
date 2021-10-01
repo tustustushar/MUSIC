@@ -1,6 +1,6 @@
 from callsmusic.callsmusic import client as USER
 
-from config import SUDO_USERS, PMPERMIT, OWNER_NAME, BOT_NAME, UPDATES_CHANNEL, GROUP_SUPPORT
+from config import SUDO_USERS, PMPERMIT
 
 from pyrogram import filters
 
